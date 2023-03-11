@@ -68,7 +68,7 @@ h4 {
 
 /*navbar and links start*/
 
-.navbar {
+.header-section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -99,7 +99,7 @@ h4 {
   width: 20px;
 }
 
-.nav-link-box {
+.navbar__nav-links {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -110,7 +110,7 @@ h4 {
   padding-left: 93px;
 }
 
-.nav-link-box > .active::after {
+.navbar__nav-links > .active::after {
   position: absolute;
   content: "";
   display: block;
@@ -122,11 +122,12 @@ h4 {
   margin-bottom: 0;
 }
 
-.nav-link-box a {
+.navbar__nav-links a {
   color: var(--main-font-color);
 }
 
-.top-brand-link {
+/*top-brand-link*/
+.navbar__logo-TopLink {
   font-weight: 700;
   font-size: 26px;
   line-height: 2em;
@@ -142,7 +143,7 @@ h4 {
   color: var(--logo-white-font-color);
 }
 
-.top-link {
+.navbar__nav-links__top-link {
   text-decoration: none;
 
   transition-property: color;
@@ -150,33 +151,33 @@ h4 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
 }
-a.top-link:hover {
+a.navbar__nav-links__top-link:hover {
   color: var(--brand-color);
 }
-a.top-link:hover .icon-contact-link {
+a.navbar__nav-links__top-link:hover .icon-contact-link {
   color: var(--brand-color);
   --color5: var(--brand-color);
   --color2: var(--brand-color);
 }
-a.top-link:active {
+a.navbar__nav-links__top-link:active {
   color: var(--brand-color);
 }
-a.top-link:focus {
+a.navbar__nav-links__top-link:focus {
   color: var(--focus-color);
 }
 
-.brand-color {
+.navbar__logo-brand-color {
   color: var(--brand-color);
 }
 
-.logo-box a {
+.navbar__logo-Box a {
   display: flex;
   align-items: center;
   text-decoration: none;
   padding-left: 215px;
 }
 
-.logo-nav {
+.navbar__logo {
   display: flex;
   flex-direction: row;
   align-items: center;
