@@ -65,7 +65,7 @@
           <h1>efektywne rozwiązania dla waszego biznesu</h1>
         </div>
         <button
-          class="heading__button modal-button"
+          class="heading__button modal__button"
           type="button"
           data-modal-open
         >
@@ -424,7 +424,7 @@
       </div>
     </footer>
 
-    <div class="backdrop backdrop__is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__button-close" data-modal-close>
           <svg height="11px" width="11px">
@@ -456,7 +456,7 @@
               <svg class="modal__icon" height="13px" width="13px">
                 <use href="./images/svg/icons.svg#icon-phone-icon"></use>
               </svg>
-              <input class="type-row" type="tel" name="tel" />
+              <input class="modal__row" type="tel" name="tel" />
             </label>
           </div>
 
@@ -482,22 +482,22 @@
           </div>
 
           <div>
-            <label class="law-rules">
-              <div class="checkbox-frame">
-                <input class="checkbox" type="checkbox" />
-                <svg class="check-sign">
+            <label class="modal__law-rules">
+              <div class="modal__checkbox-frame">
+                <input class="modal__checkbox" type="checkbox" />
+                <svg class="modal__check-sign">
                   <use href="./images/svg/icons.svg#icon-done-icon"></use>
                 </svg>
               </div>
-              <span class="text-field">
+              <span class="modal__text-field">
                 Oświadczam iż akceptuję
-                <a class="law-link" href="">Regulamin</a> i
-                <a class="law-link" href="">Politykę Prywatności</a>
+                <a class="modal__law-link" href="">Regulamin</a> i
+                <a class="modal__law-link" href="">Politykę Prywatności</a>
               </span>
             </label>
           </div>
 
-          <button type="submit" class="form-send-button">
+          <button type="submit" class="modal__send-button">
             <b>Wyślij</b>
           </button>
         </form>
