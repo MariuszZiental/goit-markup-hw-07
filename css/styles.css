@@ -136,7 +136,6 @@ h4 {
   color: var(--logo-black-font-color);
 }
 
-
 .navbar__top-link {
   text-decoration: none;
 
@@ -176,7 +175,6 @@ a.navbar__top-link:focus {
   flex-direction: row;
   align-items: center;
 }
-
 
 /*navbar and links end*/
 
@@ -280,7 +278,7 @@ a.navbar__top-link:focus {
   align-items: center;
 }
 
-.advanteges__svg                       {
+.advanteges__svg {
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
@@ -526,7 +524,6 @@ a.foot__bottom-link:focus {
   color: var(--focus-color);
 }
 
-
 .foot__join-us {
   display: flex;
   flex-direction: column;
@@ -548,8 +545,6 @@ a.foot__bottom-link:focus {
 .foot__svg-media {
   padding: 11px;
 }
-
-
 
 .foot__footer-icons {
   display: flex;
@@ -630,8 +625,6 @@ a.foot__bottom-link:focus {
   margin: 13px 28px 13px 24px;
   fill: var(--logo-white-font-color);
 }
-
-
 
 /*-------------------------------------------------------------------*/
 /*only portfolio styles start*/
@@ -765,7 +758,6 @@ a.foot__bottom-link:focus {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-
 .modal {
   position: absolute;
   top: 50%;
@@ -884,7 +876,6 @@ a.foot__bottom-link:focus {
   border-color: var(--logo-white-font-color);
 }
 
-
 textarea {
   resize: none;
   height: 120px;
@@ -901,7 +892,6 @@ textarea {
 textarea:hover {
   border-color: var(--brand-color);
 }
-
 
 .modal__comment {
   display: flex;
