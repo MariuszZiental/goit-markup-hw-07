@@ -1,18 +1,32 @@
-@use "utils/variables.scss";
+@use "./utils/variables" as *;
 
-$font-size: 14px;
-$line-height: 16px;
-$min-height: 100%;
-$width: 1600px;
-$margin: 0 auto;
+@use "./components/header";
+
+@use "./components/_heading";
+
+@use "./components/_advanteges";
+
+@use "./components/_workscope";
+
+@use "./components/_crew";
+
+@use "./components/_clients";
+
+@use "./components/footer";
+
+@use "./components/modal";
+
+@use "./components/portfolio";
+
+
 
 body {
-  color: var(--main-font-color);
-  font-size: $font-size;
-  line-height: $line-height;
-  min-height: $min-height;
-  width: $width;
-  margin: $margin;
+  color: $main-font-color;
+  font-size:  14px;
+  line-height: 16px;
+  min-height: 100%;
+  width: 1600px;
+  margin: 0 auto;
 }
 
 ul {
@@ -26,7 +40,7 @@ h1 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.75em;
-  color: var(--logo-white-font-color);
+  color: $logo-white-font-color ;
 }
 
 h2 {
@@ -52,3 +66,5 @@ h4 {
   margin: 0px auto;
   max-width: 1200px;
 }
+
+

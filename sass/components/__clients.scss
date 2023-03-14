@@ -1,0 +1,33 @@
+.clients {
+  padding-bottom: 94px;
+}
+.clients__logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.clients__icons {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+  border-color: $icon-color;
+  fill: $icon-color;
+
+  transition-property: fill, border-color, --color1, --color2;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
+.clients__icons:hover {
+  fill: $brand-color;
+  border-color: $brand-color;
+  --color1: $brand-color;
+  --color2: $brand-color;
+}

@@ -1,0 +1,54 @@
+.crew {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background: $our-crew-background;
+}
+.crew li {
+  display: inline-flex;
+  list-style: none;
+  align-items: center;
+}
+
+.crew__list {
+  display: flex;
+  flex-direction: row;
+}
+.crew__card {
+  text-align: center;
+  margin: 15px;
+  margin-bottom: 94px;
+  font-size: 16px;
+  line-height: 1.37em;
+  letter-spacing: 0.03em;
+  background: $logo-white-font-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.crew__card-note {
+  margin-bottom: 30px;
+}
+
+.crew__icons-media {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+
+  transition-property: background-color, --color1, --color3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+.crew__icons-media:hover {
+  background-color: $brand-color;
+  --color3: $logo-white-font-color;
+  --color1: $logo-white-font-color;
+}
+
+.crew__svg-media {
+  padding: 11px;
+}
