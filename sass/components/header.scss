@@ -5,7 +5,7 @@
 
   align-items: center;
   height: 80px;
-  border: 1px solid var(--navbar-border-color);
+  border: 1px solid $navbar-border-color;
   margin: 0;
 }
 
@@ -19,7 +19,7 @@
 .navbar__contact a {
   display: flex;
   align-items: center;
-  color: var(--main-font-color);
+  color: $main-font-color;
 }
 .navbar__icon-contact-link {
   display: inline-flex;
@@ -47,13 +47,13 @@
   width: 53px;
   height: 4px;
   border-radius: 4px;
-  background-color: var(--brand-color);
+  background-color: $brand-color;
   margin-top: 5px;
   margin-bottom: 0;
 }
 
 .navbar__nav-links a {
-  color: var(--main-font-color);
+  color: $main-font-color;
 }
 
 /*top-brand-link*/
@@ -63,7 +63,7 @@
   font-size: 26px;
   line-height: 2em;
   letter-spacing: 0.03em;
-  color: var(--logo-black-font-color);
+  color: $logo-black-font-color;
 }
 
 
@@ -76,22 +76,22 @@
   transition-delay: 0;
 }
 a.navbar__top-link:hover {
-  color: var(--brand-color);
+  color: $brand-color;
 }
 a.navbar__top-link:hover .navbar__icon-contact-link {
-  color: var(--brand-color);
-  --color5: var(--brand-color);
-  --color2: var(--brand-color);
+  color: $brand-color;
+  --color5: $brand-color;
+  --color2: $brand-color;
 }
 a.navbar__top-link:active {
-  color: var(--brand-color);
+  color: $brand-color;
 }
 a.navbar__top-link:focus {
-  color: var(--focus-color);
+  color: $focus-color;
 }
 
 .navbar__logo-color {
-  color: var(--brand-color);
+  color: $brand-color;
 }
 
 .navbar__logo a {

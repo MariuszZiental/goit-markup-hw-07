@@ -17,7 +17,7 @@
   min-height: 581px;
 
   border-radius: 4px;
-  background-color: var(--logo-white-font-color);
+  background-color: $logo-white-font-color;
 
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -97,8 +97,8 @@
   transition-delay: 0;
 }
 .modal__box:hover {
-  border-color: var(--brand-color);
-  fill: var(--brand-color);
+  border-color: $brand-color;
+  fill: $brand-color;
 }
 
 .modal__icon {
@@ -120,10 +120,10 @@
   transition-delay: 0;
 }
 .modal__row :hover {
-  border-color: var(--logo-white-font-color);
+  border-color: $logo-white-font-color;
 }
 .modal__row :focus {
-  border-color: var(--logo-white-font-color);
+  border-color: $logo-white-font-color;
 }
 
 
@@ -141,7 +141,7 @@ textarea {
   transition-delay: 0;
 }
 textarea:hover {
-  border-color: var(--brand-color);
+  border-color: $brand-color;
 }
 
 
@@ -164,7 +164,7 @@ textarea:hover {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: var(--secondary-font-color);
+  color: $secondary-font-color;
 }
 
 .modal__check-sign {
@@ -195,8 +195,8 @@ textarea:hover {
 }
 
 .modal__checkbox:checked ~ .modal__check-sign {
-  background-color: var(--brand-color);
-  fill: var(--logo-white-font-color);
+  background-color: $brand-color;
+  fill: $logo-white-font-color;
   visibility: visible;
 }
 
@@ -214,7 +214,7 @@ textarea:hover {
 }
 
 .modal__law-rules > p :not(a.modal__law-link) {
-  color: var(--secondary-font-color);
+  color: $secondary-font-color;
 }
 
 a.modal__law-link {
@@ -226,8 +226,8 @@ a.modal__law-link {
   border: none;
   padding: 10px 76px 10px 76px;
   margin: 30px 164px 40px 164px;
-  background-color: var(--brand-color);
-  color: var(--logo-white-font-color);
+  background-color: $brand-color;
+  color: $logo-white-font-color;
   border-radius: 4px;
   font-size: 16px;
   line-height: 30px;

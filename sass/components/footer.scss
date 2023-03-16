@@ -4,7 +4,7 @@
   justify-content: start;
   align-items: center;
   text-decoration: none;
-  background: var(--black-box-color);
+  background: $black-box-color;
 }
 .foot__bottom-things {
   display: flex;
@@ -23,11 +23,11 @@
   font-size: 26px;
   line-height: 2em;
   letter-spacing: 0.03em;
-  color: var(--logo-white-font-color);
+  color: $logo-white-font-color;
 }
 
 a.foot__bottom-link {
-  color: var(--footer-contact-link-color);
+  color: $footer-contact-link-color;
   text-decoration: none;
 
   transition-property: color;
@@ -36,13 +36,13 @@ a.foot__bottom-link {
   transition-delay: 0;
 }
 a.foot__bottom-link:hover {
-  color: var(--brand-color);
+  color: $brand-color;
 }
 a.foot__bottom-link:active {
-  color: var(--brand-color);
+  color: $brand-color;
 }
 a.foot__bottom-link:focus {
-  color: var(--focus-color);
+  color: $focus-color;
 }
 
 
@@ -52,7 +52,7 @@ a.foot__bottom-link:focus {
   align-items: flex-start;
   padding-top: 72px;
   padding-bottom: 100px;
-  color: var(--logo-white-font-color);
+  color: $logo-white-font-color;
   text-transform: uppercase;
 }
 .foot__join-us li {
@@ -75,8 +75,8 @@ a.foot__bottom-link:focus {
   align-items: center;
   cursor: pointer;
   border-radius: 50%;
-  --color1: var(--logo-white-font-color);
-  --color3: var(--logo-white-font-color);
+  --color1: $logo-white-font-color;
+  --color3: $logo-white-font-color;
   background-color: rgba(255, 255, 255, 0.1);
 
   transition-property: background-color;
@@ -85,7 +85,7 @@ a.foot__bottom-link:focus {
   transition-delay: 0;
 }
 .foot__footer-icons:hover {
-  background-color: var(--brand-color);
+  background-color: $brand-color;
 }
 
 .foot__newsletter {
@@ -94,19 +94,19 @@ a.foot__bottom-link:focus {
   padding-top: 72px;
   padding-bottom: 60px;
   padding-left: 78px;
-  background-color: var(--black-box-color);
+  background-color: $black-box-color;
 }
 
 .foot__newsletter > p {
   text-transform: uppercase;
   padding-bottom: 20px;
 
-  color: var(--logo-white-font-color);
+  color: $logo-white-font-color;
 }
 
 .foot__newsletter-email {
   display: inline;
-  background-color: var(--black-box-color);
+  background-color: $black-box-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   height: 50px;
@@ -122,7 +122,7 @@ a.foot__bottom-link:focus {
   transition-delay: 0;
 }
 .foot__newsletter-email:hover {
-  border-color: var(--brand-color);
+  border-color: $brand-color;
 }
 
 .foot__newsletter-button {
@@ -130,8 +130,8 @@ a.foot__bottom-link:focus {
   align-items: center;
   justify-content: center;
   padding-left: 42px;
-  background-color: var(--brand-color);
-  color: var(--logo-white-font-color);
+  background-color: $brand-color;
+  color: $logo-white-font-color;
   border-radius: 4px;
   font-size: 16px;
 
@@ -147,5 +147,5 @@ a.foot__bottom-link:focus {
 
 .foot__icon-send {
   margin: 13px 28px 13px 24px;
-  fill: var(--logo-white-font-color);
+  fill: $logo-white-font-color;
 }
