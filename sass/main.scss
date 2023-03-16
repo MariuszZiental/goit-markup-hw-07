@@ -1,22 +1,22 @@
-@use "./utils/variables" as *;
+@import "utils/variables";
 
-@use "./components/header";
+@import "components/header";
 
-@use "./components/_heading";
+@import "components/_heading";
 
-@use "./components/_advanteges";
+@import "components/_advanteges";
 
-@use "./components/_workscope";
+@import "components/_workscope";
 
-@use "./components/_crew";
+@import "components/_crew";
 
-@use "./components/_clients";
+@import "components/_clients";
 
-@use "./components/footer";
+@import "components/footer";
 
-@use "./components/modal";
+@import "components/modal";
 
-@use "./components/portfolio";
+@import "components/portfolio";
 
 
 
