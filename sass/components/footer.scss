@@ -59,11 +59,18 @@ a.foot__bottom-link {
   padding-bottom: 100px;
   color: $logo-white-font-color;
   text-transform: uppercase;
+.foot__join-us li {
+  display: inline-flex;
+  flex-direction: row;
 }
+}
+
 
 .foot__footer-icons {
   display: flex;
+  flex-direction: row;
   align-items: center;
+
   cursor: pointer;
   border-radius: 50%;
 
@@ -96,8 +103,9 @@ a.foot__bottom-link {
   background-color: $black-box-color;
 
   .foot__newsletter > p {
-    text-transform: uppercase;
-    color: $logo-white-font-color;
+     text-transform: uppercase;
+  padding-bottom: 20px;
+  color: $logo-white-font-color;
   }
   
   .foot__newsletter-email {

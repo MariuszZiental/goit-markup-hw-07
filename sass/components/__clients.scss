@@ -1,14 +1,13 @@
 .clients {
   padding-bottom: 94px;
-}
+
 .clients__logos {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   column-gap: 30px;
-}
-
+  
 .clients__icons {
   display: inline-flex;
   flex-wrap: wrap;
@@ -30,3 +29,8 @@
   fill: $brand-color;
   border-color: $brand-color;
 }
+}
+}
+
+
+
