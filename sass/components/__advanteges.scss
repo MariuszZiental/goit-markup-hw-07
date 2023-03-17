@@ -3,68 +3,35 @@
   flex-direction: column;
   padding: 94px 215px 94px 215px;
   padding-bottom: 0px;
-  margin: 0 auto;
   line-height: 1.5em;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: $secondary-font-color;
-}
 
 .advanteges__svg-list {
   display: flex;
-  padding: 0px;
-  justify-content: space-around;
   align-items: center;
   column-gap: 30px;
-}
-.advanteges__icon1 {
-  height: 120px;
-  width: 270px;
-  background-color: $our-crew-background;
+
+.advanteges__icon {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.advanteges__icon2 {
   height: 120px;
   width: 270px;
   background-color: $our-crew-background;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.advanteges__icon3 {
-  height: 120px;
-  width: 270px;
-  background-color: $our-crew-background;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.advanteges__icon4 {
-  height: 120px;
-  width: 270px;
-  background-color: $our-crew-background;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .advanteges__svg {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   height: 70px;
   width: 70px;
 }
-
-.notes {
-  display: inline-block;
 }
+}
+
 .list-of-notes {
   display: flex;
   justify-content: center;
   column-gap: 30px;
-  padding-left: 0;
+}
+
 }
