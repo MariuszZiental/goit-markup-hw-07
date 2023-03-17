@@ -13,13 +13,14 @@
   display: inline-flex;
   flex-wrap: wrap;
 
+  padding: 8px;
   border: 1px solid;
   border-radius: 4px;
   cursor: pointer;
   border-color: $icon-color;
   fill: $icon-color;
 
-  transition-property: fill, border-color, --color1, --color2;
+  transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;
@@ -28,6 +29,4 @@
 .clients__icons:hover {
   fill: $brand-color;
   border-color: $brand-color;
-  --color1: $brand-color;
-  --color2: $brand-color;
 }

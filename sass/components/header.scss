@@ -9,24 +9,21 @@
   margin: 0;
 }
 
-.navbar__contact {
+.navbar__box {
   display: flex;
-  padding: 0px 227px;
-  column-gap: 46px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  flex-direction: row;
+  align-items: center;
 }
-.navbar__contact a {
+
+.navbar__logo a {
   display: flex;
   align-items: center;
-  color: $main-font-color;
+  text-decoration: none;
+  padding-left: 215px;
 }
-.navbar__icon-contact-link {
-  display: inline-flex;
-  flex-direction: row;
-  margin-right: 10px;
-  height: 30px;
-  width: 20px;
+
+.navbar__logo-color {
+  color: $brand-color;
 }
 
 .navbar__nav-links {
@@ -52,11 +49,6 @@
   margin-bottom: 0;
 }
 
-.navbar__nav-links a {
-  color: $main-font-color;
-}
-
-/*top-brand-link*/
 .navbar__logo-link {
   text-decoration: none;
   font-weight: 700;
@@ -66,9 +58,26 @@
   color: $logo-black-font-color;
 }
 
+.navbar__nav-links a {
+  color: $main-font-color;
+}
+
+.navbar__contact {
+  display: flex;
+  padding: 0px 227px;
+  column-gap: 46px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+.navbar__contact a {
+  display: flex;
+  align-items: center;
+  color: $main-font-color;
+}
 
 .navbar__top-link {
   text-decoration: none;
+  color: $main-font-color;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -78,31 +87,30 @@
 a.navbar__top-link:hover {
   color: $brand-color;
 }
+
+.navbar__icon-contact-link {
+  display: inline-flex;
+  flex-direction: row;
+  margin-right: 10px;
+  height: 30px;
+  width: 20px;
+  fill: $main-font-color;
+
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+}
+
 a.navbar__top-link:hover .navbar__icon-contact-link {
-  color: $brand-color;
-  --color5: $brand-color;
-  --color2: $brand-color;
+  fill: $brand-color;
 }
 a.navbar__top-link:active {
   color: $brand-color;
 }
-a.navbar__top-link:focus {
-  color: $focus-color;
-}
 
-.navbar__logo-color {
-  color: $brand-color;
-}
 
-.navbar__logo a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding-left: 215px;
-}
 
-.navbar__box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
+
+
+

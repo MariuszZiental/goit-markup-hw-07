@@ -59,6 +59,8 @@ a.foot__bottom-link:focus {
   display: inline-flex;
   flex-direction: row;
 }
+
+
 .foot__join-us-title {
   padding-top: 35px;
   padding-bottom: 20px;
@@ -75,8 +77,8 @@ a.foot__bottom-link:focus {
   align-items: center;
   cursor: pointer;
   border-radius: 50%;
-  --color1: $logo-white-font-color;
-  --color3: $logo-white-font-color;
+  
+  fill: $logo-white-font-color;
   background-color: rgba(255, 255, 255, 0.1);
 
   transition-property: background-color;
