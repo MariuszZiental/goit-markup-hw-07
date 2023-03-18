@@ -12,12 +12,14 @@
     align-items: center;
   }
 
-  .crew__list {
+.section-crew__list-of-members {
     display: flex;
     flex-direction: row;
   }
+}
 
-  .crew__card {
+
+  .member-profile {
     text-align: center;
     margin: 15px;
     font-size: 16px;
@@ -28,11 +30,11 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    .crew__card-note {
+    .member-profile__caption {
       margin-bottom: 30px;
     }
 
-    .crew__icons-media {
+    .member-profile__icons-media {
       display: flex;
       align-items: center;
       cursor: pointer;
@@ -44,9 +46,8 @@
         background-color: $brand-color;
         fill: $logo-white-font-color;
       }
-      .crew__svg-media {
+      .member-profile__icons--svg-media {
         padding: 11px;
       }
     }
   }
-}
