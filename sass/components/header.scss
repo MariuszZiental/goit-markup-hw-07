@@ -2,29 +2,43 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   align-items: center;
   height: 80px;
   border: 1px solid $navbar-border-color;
   margin: 0;
 }
 
+
+/*   Logo   */
+
+
 .navbar__box {
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  .navbar__logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 215px;
+
+    .navbar__logo-link {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 2em;
+      letter-spacing: 0.03em;
+      color: $logo-black-font-color;
+
+      .navbar__logo-color {
+        color: $brand-color;
+      }
+    }
+  }
 }
 
-.navbar__logo a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding-left: 215px;
-}
-
-.navbar__logo-color {
-  color: $brand-color;
-}
+/*   Navigation links   */
 
 .navbar__nav-links {
   display: flex;
@@ -35,32 +49,23 @@
   letter-spacing: 0.02em;
   margin: 0;
   padding-left: 93px;
+  & .active::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 53px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: $brand-color;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  & a {
+    color: $main-font-color;
+  }
 }
 
-.navbar__nav-links > .active::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 53px;
-  height: 4px;
-  border-radius: 4px;
-  background-color: $brand-color;
-  margin-top: 5px;
-  margin-bottom: 0;
-}
-
-.navbar__logo-link {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 2em;
-  letter-spacing: 0.03em;
-  color: $logo-black-font-color;
-}
-
-.navbar__nav-links a {
-  color: $main-font-color;
-}
+/*   Contact links   */
 
 .navbar__contact {
   display: flex;
@@ -68,43 +73,35 @@
   column-gap: 46px;
   font-weight: 500;
   letter-spacing: 0.02em;
+
+  .navbar__contact a {
+    display: flex;
+    align-items: center;
+    color: $main-font-color;
+  }
+
+  .navbar__top-link {
+    text-decoration: none;
+    color: $main-font-color;
+    @extend %transition;
+
+    &:hover {
+      color: $brand-color;
+    }
+    &:active {
+      color: $brand-color;
+    }
+    &:hover .navbar__icon-contact-link {
+      fill: $brand-color;
+    }
+    .navbar__icon-contact-link {
+      display: inline-flex;
+      flex-direction: row;
+      margin-right: 10px;
+      height: 30px;
+      width: 20px;
+      fill: $main-font-color;
+      @extend %transition;
+    }
+  }
 }
-.navbar__contact a {
-  display: flex;
-  align-items: center;
-  color: $main-font-color;
-}
-
-.navbar__top-link {
-  text-decoration: none;
-  color: $main-font-color;
-
-  @extend %transition;
-}
-a.navbar__top-link:hover {
-  color: $brand-color;
-}
-
-.navbar__icon-contact-link {
-  display: inline-flex;
-  flex-direction: row;
-  margin-right: 10px;
-  height: 30px;
-  width: 20px;
-  fill: $main-font-color;
-
-  @extend %transition;
-}
-
-a.navbar__top-link:hover .navbar__icon-contact-link {
-  fill: $brand-color;
-}
-a.navbar__top-link:active {
-  color: $brand-color;
-}
-
-
-
-
-
-
