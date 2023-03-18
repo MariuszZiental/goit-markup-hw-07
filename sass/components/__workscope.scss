@@ -3,13 +3,13 @@
   flex-direction: column;
   width: 1200px;
   margin: 0 auto;
-  
+
   .workscope__list {
     display: flex;
     flex-direction: row;
     column-gap: 30px;
 
-    @each $workscope in computers, mobile, graphic {
+    @each $workscope in workscope__computers, workscope__mobile, workscope__graphic {
       .#{$workscope}--image {
         display: flex;
         flex-direction: column;
