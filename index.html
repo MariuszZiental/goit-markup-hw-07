@@ -18,38 +18,38 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+
     <link rel="stylesheet" href="./css/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header>
       <div class="navbar">
-        <div class="navbar__box">
-          <div class="navbar__logo">
-            <a href="./index.html" class="navbar__logo-link"
-              ><span class="navbar__logo-color">Web</span>Studio</a
-            >
-          </div>
-
-          <nav class="navbar__nav-links">
-            <a class="navbar__top-link active" href="./index.html">Agencja</a>
-            <a class="navbar__top-link" href="./portfolio.html">Portfolio</a>
-            <a class="navbar__top-link" href="./kontakt">Kontakt</a>
-          </nav>
+        <div class="navbar__logo">
+          <a href="./index.html" class="navbar__logo-link"
+            ><span class="navbar__logo-color">Web</span>Studio</a
+          >
         </div>
-        <div class="navbar__contact">
+
+        <nav class="navbar__navigation-links">
+          <a class="navbar__top-link active" href="./index.html">Agencja</a>
+          <a class="navbar__top-link" href="./portfolio.html">Portfolio</a>
+          <a class="navbar__top-link" href="./kontakt">Kontakt</a>
+        </nav>
+
+        <div class="navbar__contact-links">
           <div>
-            <a class="navbar__top-link" href="mailto:info@devstudio.com">
-              <svg class="navbar__icon-contact-link">
+            <a class="navbar__top-contact" href="mailto:info@devstudio.com">
+              <svg class="navbar__contact-link--icon">
                 <use href="./images/svg/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </div>
           <div>
-            <a class="navbar__top-link" href="tel:0048111111111">
-              <svg class="navbar__icon-contact-link">
+            <a class="navbar__top-contact" href="tel:0048111111111">
+              <svg class="navbar__contact-link--icon">
                 <use href="./images/svg/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -73,59 +73,73 @@
         </button>
       </section>
 
-      <section class="advanteges">
-        <ul class="advanteges__svg-list">
-          <li class="advanteges__icon">
-            <svg class="advanteges__svg">
-              <use href="./images/svg/icons.svg#icon-antenna"></use>
-            </svg>
-          </li>
-          <li class="advanteges__icon">
-            <svg class="advanteges__svg">
-              <use href="./images/svg/icons.svg#icon-clock"></use>
-            </svg>
-          </li>
-          <li class="advanteges__icon">
-            <svg class="advanteges__svg">
-              <use href="./images/svg/icons.svg#icon-diagram"></use>
-            </svg>
-          </li>
-          <li class="advanteges__icon">
-            <svg class="advanteges__svg">
-              <use href="./images/svg/icons.svg#icon-astronaut"></use>
-            </svg>
-          </li>
-        </ul>
-        <ul class="list-of-notes">
-          <li>
-            <h3><b>LOREM IPSUM</b></h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h3><b>LOREM IPSUM</b></h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h3><b>LOREM IPSUM</b></h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-          <li>
-            <h3><b>LOREM IPSUM</b></h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
-              arcu sem. Sed non sodales dui. Interdum et malesuada
-            </p>
-          </li>
-        </ul>
+      <section class="section-advanteges">
+        <div class="advanteges__list-of-blocks">
+
+          <ul class="advanteges__block">
+            <li><div class="advantages__image">
+              <svg class="advanteges__svg">
+                <use href="./images/svg/icons.svg#icon-antenna"></use>
+              </svg>
+            </div></li>
+            
+            <li class="advanteges__note">
+              <h3><b>LOREM IPSUM</b></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+
+          <ul class="advanteges__block">
+            <li><div class="advantages__image">
+              <svg class="advanteges__svg">
+                <use href="./images/svg/icons.svg#icon-clock"></use>
+              </svg>
+            </div></li>
+            
+            <li class="advanteges__note">
+              <h3><b>LOREM IPSUM</b></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+
+          <ul class="advanteges__block">
+            <li><div class="advantages__image">
+              <svg class="advanteges__svg">
+                <use href="./images/svg/icons.svg#icon-diagram"></use>
+              </svg>
+            </div></li>
+            
+            <li class="advanteges__note">
+              <h3><b>LOREM IPSUM</b></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+
+          <ul class="advanteges__block">
+            <li><div class="advantages__image">
+              <svg class="advanteges__svg">
+                <use href="./images/svg/icons.svg#icon-antenna"></use>
+              </svg>
+            </div></li>
+            
+            <li class="advanteges__note">
+              <h3><b>LOREM IPSUM</b></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+                arcu sem. Sed non sodales dui. Interdum et malesuada
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="workscope">
@@ -151,8 +165,9 @@
         </div>
       </section>
 
-      <section class="crew">
+      <section class="section-crew">
         <h2>Nasz zespół</h2>
+
         <div class="crew__list">
           <div class="crew__card">
             <img
@@ -508,3 +523,15 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+.navbar__box { display: flex; flex-direction: row; align-items: center; }
+.navbar__logo a { display: flex; align-items: center; text-decoration: none;
+margin-left: 215px; } .navbar__logo-link { text-decoration: none; font-weight:
+700; font-size: 26px; line-height: 2em; letter-spacing: 0.03em; color:
+$logo-black-font-color; .navbar__logo-color { color: $brand-color; } } /*
+Navigation links */ .navbar__nav-links { display: flex; flex-direction: row;
+align-items: flex-end; column-gap: 46px; font-weight: 500; letter-spacing:
+0.02em; margin: 0; padding-left: 93px; & .active::after { position: absolute;
+content: ""; display: block; width: 53px; height: 4px; border-radius: 4px;
+background-color: $brand-color; margin-top: 5px; margin-bottom: 0; } & a {
+color: $main-font-color; } }

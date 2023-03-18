@@ -8,39 +8,31 @@
   margin: 0;
 }
 
-
 /*   Logo   */
 
-
-.navbar__box {
+.navbar__logo a {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  text-decoration: none;
+  margin-left: 215px;
+}
 
-  .navbar__logo a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding-left: 215px;
+.navbar__logo-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 2em;
+  letter-spacing: 0.03em;
+  color: $logo-black-font-color;
 
-    .navbar__logo-link {
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 26px;
-      line-height: 2em;
-      letter-spacing: 0.03em;
-      color: $logo-black-font-color;
-
-      .navbar__logo-color {
-        color: $brand-color;
-      }
-    }
+  .navbar__logo-color {
+    color: $brand-color;
   }
 }
 
 /*   Navigation links   */
 
-.navbar__nav-links {
+.navbar__navigation-links {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -49,6 +41,7 @@
   letter-spacing: 0.02em;
   margin: 0;
   padding-left: 93px;
+
   & .active::after {
     position: absolute;
     content: "";
@@ -62,22 +55,11 @@
   }
   & a {
     color: $main-font-color;
+    text-decoration: none;
   }
-}
 
-/*   Contact links   */
-
-.navbar__contact {
-  display: flex;
-  padding: 0px 227px;
-  column-gap: 46px;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-
-  .navbar__contact a {
-    display: flex;
-    align-items: center;
-    color: $main-font-color;
+  & a:hover {
+    color: $brand-color;
   }
 
   .navbar__top-link {
@@ -91,10 +73,39 @@
     &:active {
       color: $brand-color;
     }
-    &:hover .navbar__icon-contact-link {
+  }
+}
+
+/*   Contact links   */
+
+.navbar__contact-links {
+  display: flex;
+  padding: 0px 227px;
+  column-gap: 46px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  & a {
+    display: flex;
+    align-items: center;
+    color: $main-font-color;
+  }
+
+  .navbar__top-contact {
+    text-decoration: none;
+    color: $main-font-color;
+    @extend %transition;
+
+    &:hover {
+      color: $brand-color;
+    }
+    &:active {
+      color: $brand-color;
+    }
+    &:hover .navbar__contact-link--icon {
       fill: $brand-color;
     }
-    .navbar__icon-contact-link {
+    .navbar__contact-link--icon {
       display: inline-flex;
       flex-direction: row;
       margin-right: 10px;
