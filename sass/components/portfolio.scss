@@ -18,10 +18,7 @@
   overflow: hidden;
   cursor: pointer;
 
-  transition-property: transform, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  @extend %transition;
 }
 .projects__card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -48,10 +45,7 @@
   height: 100%;
   z-index: 1;
 
-  transition-property: transform, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+ @extend %transition;
 
   transform: translateY(100%);
 }
@@ -81,10 +75,7 @@
   text-decoration: none;
   color: $logo-white-font-color;
 
-  transition-property: background-color, color, border-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  @extend %transition;
 }
 .projects__buttons li :hover {
   background-color: $brand-color;
