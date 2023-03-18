@@ -11,8 +11,8 @@ $footer-contact-link-color: #ffffff99;
 $navbar-border-color: #ececec;
 $icon-color: #afb1b8;
 
-.transition {
-   transition-property: fill, background-color, border-color --color1, --color2, --color3;
+%transition {
+   transition-property: fill, background-color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-delay: 0;

@@ -79,10 +79,7 @@
   text-decoration: none;
   color: $main-font-color;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  @extend %transition;
 }
 a.navbar__top-link:hover {
   color: $brand-color;
@@ -96,10 +93,7 @@ a.navbar__top-link:hover {
   width: 20px;
   fill: $main-font-color;
 
-  transition-property: color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0;
+  @extend %transition;
 }
 
 a.navbar__top-link:hover .navbar__icon-contact-link {
