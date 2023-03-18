@@ -10,14 +10,14 @@
 
 /*   Logo   */
 
-.navbar__logo a {
+.logo a {
   display: flex;
   align-items: center;
   text-decoration: none;
   margin-left: 215px;
 }
 
-.navbar__logo-link {
+.logo-link {
   text-decoration: none;
   font-weight: 700;
   font-size: 26px;
@@ -25,14 +25,14 @@
   letter-spacing: 0.03em;
   color: $logo-black-font-color;
 
-  .navbar__logo-color {
+  .logo-link__logo-color {
     color: $brand-color;
   }
 }
 
 /*   Navigation links   */
 
-.navbar__navigation-links {
+.navigation-links {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -62,7 +62,7 @@
     color: $brand-color;
   }
 
-  .navbar__top-link {
+  .navigation-links__top-link {
     text-decoration: none;
     color: $main-font-color;
     @extend %transition;
@@ -78,7 +78,7 @@
 
 /*   Contact links   */
 
-.navbar__contact-links {
+.contact-links {
   display: flex;
   padding: 0px 227px;
   column-gap: 46px;
@@ -91,7 +91,7 @@
     color: $main-font-color;
   }
 
-  .navbar__top-contact {
+  .contact-links__top-contact {
     text-decoration: none;
     color: $main-font-color;
     @extend %transition;
@@ -102,10 +102,10 @@
     &:active {
       color: $brand-color;
     }
-    &:hover .navbar__contact-link--icon {
+    &:hover .contact-links__contact-link--icon {
       fill: $brand-color;
     }
-    .navbar__contact-link--icon {
+    .contact-links__contact-link--icon {
       display: inline-flex;
       flex-direction: row;
       margin-right: 10px;
