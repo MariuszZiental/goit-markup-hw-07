@@ -54,19 +54,12 @@
   text-transform: uppercase;
 
   .foot__join-us li {
-    display: inline-flex;
+    display: cd +inline-flex;
     flex-direction: row;
-  }
-
-  .foot__join-us-title {
-    padding-top: 35px;
-    padding-bottom: 20px;
-    margin: 0;
   }
 
   .foot__footer-icons {
     display: flex;
-    flex-direction: row;
     align-items: center;
     cursor: $cursor-pointer;
     border-radius: 50%;
