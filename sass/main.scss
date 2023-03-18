@@ -18,6 +18,12 @@
 
 @import "components/__portfolio";
 
+
+* {
+  box-sizing: border-box;
+  
+}
+
 body {
   color: $main-font-color;
   font-size: 14px;

@@ -1,44 +1,31 @@
 .section-advanteges {
-  margin: auto;
-  margin-left: 200px;
   line-height: 1.5em;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: $secondary-font-color;
 }
 
-.aadvanteges__list-of-blocks {
-display: inline-flex;
-flex-direction: row;
-height: 251px;
-width: 1170px;
-}
-
-.advanteges__block {
-  margin: 15px;
-  height: 251px;
-  width: 270px;
-  & li {
-    margin: 15px;
-  }
-  
-  .advantages__image {
+.section-advanteges__list-of-blocks {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  height: 120px;
-  width: 270px;
-  background-color: $our-crew-background;
+}
 
-  .advanteges__svg {
-    height: 70px;
-    width: 70px;
+.section-advanteges__block {
+  margin: 15px;
+  width: 270px;
+
+  .section-advantages__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 270px;
+    background-color: $our-crew-background;
+
+    .section-advantages__image--svg {
+      height: 70px;
+      width: 70px;
+    }
   }
 }
-.advantages__note {
-  height: 101px;
-  width: 270px;
-}
-}
-
-
