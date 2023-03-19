@@ -1,15 +1,17 @@
-.workscope {
+.section-workscope {
   display: flex;
   flex-direction: column;
   width: 1200px;
   margin: 0 auto;
 
-  .workscope__list {
+  .section-workscope__list {
     display: flex;
     flex-direction: row;
     column-gap: 30px;
 
-    @each $workscope in workscope__computers, workscope__mobile, workscope__graphic {
+    @each $workscope in workscope__computers, workscope__mobile,
+      workscope__graphic
+    {
       .#{$workscope}--image {
         display: flex;
         flex-direction: column;
@@ -22,7 +24,7 @@
         background-size: cover;
       }
 
-      .workscope__gradient {
+      .section-workscope__gradient {
         display: flex;
         flex-direction: row;
         justify-content: center;
