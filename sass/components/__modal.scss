@@ -98,11 +98,16 @@
       border-color: $brand-color;
       fill: $brand-color;
     }
+    
 
     .modal__box--icon {
       display: inline-flex;
       border: none;
       margin-right: 15px;
+    }
+    &:focus-within {
+      border-color: $brand-color;
+      fill: $brand-color;
     }
 
     .modal__box--row {
