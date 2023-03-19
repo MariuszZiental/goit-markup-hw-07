@@ -57,6 +57,7 @@
       color: $logo-white-font-color;
       letter-spacing: 0.03em;
       line-height: 28px;
+      @extend %transition;
     }
   }
 }

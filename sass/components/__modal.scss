@@ -94,6 +94,10 @@
       border-color: $brand-color;
       fill: $brand-color;
     }
+    &:focus {
+      border-color: $brand-color;
+      fill: $brand-color;
+    }
 
     .modal__box--icon {
       display: inline-flex;
@@ -153,13 +157,17 @@
       &:hover {
         border-color: $brand-color;
       }
+      &:focus {
+        border-color: $brand-color;
+      }
     }
   }
 }
 
 /*   Statement section   */
 
-.checkbox:checked ~ .modal__check-sign {
+.law-rules__checkbox-frame--checkbox:checked
+  ~ .law-rules__checkbox-frame--check-sign {
   background-color: $brand-color;
   fill: $logo-white-font-color;
   visibility: visible;
@@ -173,7 +181,7 @@
   margin-left: 54px;
   margin-right: 7px;
 
-  & p :not(a.modal__law-link) {
+  & .law-rules__text-field:not(a.law-rules__text-field--law-link) {
     color: $secondary-font-color;
   }
 
@@ -184,23 +192,23 @@
     border-radius: 2px;
     height: 17px;
     width: 18px;
-    .law-rules__checkbox-frame--check-sign {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 16px;
-      height: 15px;
-      visibility: hidden;
-    }
+  }
+  .law-rules__checkbox-frame--checkbox {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    cursor: $cursor-pointer;
+    height: 0;
+    width: 0;
+  }
 
-    .law-rules__checkbox-frame--checkbox {
-      position: absolute;
-      display: block;
-      opacity: 0;
-      cursor: $cursor-pointer;
-      height: 0;
-      width: 0;
-    }
+  .law-rules__checkbox-frame--check-sign {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 15px;
+    visibility: hidden;
   }
 
   .law-rules__text-field {
@@ -225,6 +233,10 @@
   @extend %transition;
 
   &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
   }
