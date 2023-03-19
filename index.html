@@ -433,7 +433,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal__button-close" data-modal-close>
+        <button type="button" class="button-close" data-modal-close>
           <svg height="11px" width="11px">
             <use href="./images/svg/icons.svg#icon-cross"></use>
           </svg>
@@ -445,11 +445,11 @@
           <div class="modal__rubric">
             <p>Imie</p>
             <label class="modal__box">
-              <svg class="modal__icon" height="12px" width="12px">
+              <svg class="modal__box--icon" height="12px" width="12px">
                 <use href="./images/svg/icons.svg#icon-name"></use>
               </svg>
               <input
-                class="modal__row"
+                class="modal__box--row"
                 type="text"
                 name="name"
                 placeholder="Grzegorz Brzęczyszczykiewicz"
@@ -460,26 +460,26 @@
           <div class="modal__rubric">
             <p>Telefon</p>
             <label class="modal__box">
-              <svg class="modal__icon" height="13px" width="13px">
+              <svg class="modal__box--icon" height="13px" width="13px">
                 <use href="./images/svg/icons.svg#icon-tel"></use>
               </svg>
-              <input class="modal__row" type="tel" name="tel" />
+              <input class="modal__box--row" type="tel" name="tel" />
             </label>
           </div>
 
           <div class="modal__rubric">
             <p>Email</p>
             <label class="modal__box">
-              <svg class="modal__icon" height="12px" width="15px">
+              <svg class="modal__box--icon" height="12px" width="15px">
                 <use href="./images/svg/icons.svg#icon-email"></use>
               </svg>
-              <input class="modal__row" type="email" name="E-mail" />
+              <input class="modal__box--row" type="email" name="E-mail" />
             </label>
           </div>
 
-          <div class="modal__comment-rubric">
+          <div class="comment-rubric">
             <p>Komentarz</p>
-            <label class="modal__comment">
+            <label class="comment-rubric__comment">
               <textarea
                 name="feedback"
                 rows="6"
@@ -489,22 +489,22 @@
           </div>
 
           <div>
-            <label class="modal__law-rules">
-              <div class="modal__checkbox-frame">
-                <input class="modal__checkbox" type="checkbox" />
-                <svg class="modal__check-sign">
+            <label class="law-rules">
+              <div class="law-rules__checkbox-frame">
+                <input class="law-rules__checkbox-frame--checkbox" type="checkbox" />
+                <svg class="law-rules__checkbox-frame--check-sign">
                   <use href="./images/svg/icons.svg#icon-done"></use>
                 </svg>
               </div>
-              <span class="modal__text-field">
+              <span class="law-rules__text-field">
                 Oświadczam iż akceptuję
-                <a class="modal__law-link" href="">Regulamin</a> i
-                <a class="modal__law-link" href="">Politykę Prywatności</a>
+                <a class="law-rules__text-field--law-link" href="">Regulamin</a> i
+                <a class="law-rules__text-field--law-link" href="">Politykę Prywatności</a>
               </span>
             </label>
           </div>
 
-          <button type="submit" class="modal__send-button">
+          <button type="submit" class="send-button">
             <b>Wyślij</b>
           </button>
         </form>
@@ -513,15 +513,3 @@
     <script src="./js/modal.js"></script>
   </body>
 </html>
-
-.navbar__box { display: flex; flex-direction: row; align-items: center; }
-.navbar__logo a { display: flex; align-items: center; text-decoration: none;
-margin-left: 215px; } .navbar__logo-link { text-decoration: none; font-weight:
-700; font-size: 26px; line-height: 2em; letter-spacing: 0.03em; color:
-$logo-black-font-color; .navbar__logo-color { color: $brand-color; } } /*
-Navigation links */ .navbar__nav-links { display: flex; flex-direction: row;
-align-items: flex-end; column-gap: 46px; font-weight: 500; letter-spacing:
-0.02em; margin: 0; padding-left: 93px; & .active::after { position: absolute;
-content: ""; display: block; width: 53px; height: 4px; border-radius: 4px;
-background-color: $brand-color; margin-top: 5px; margin-bottom: 0; } & a {
-color: $main-font-color; } }
